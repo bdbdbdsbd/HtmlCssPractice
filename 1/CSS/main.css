@@ -23,6 +23,7 @@ body{
 }
 .main img{
     position: absolute;
+    /*让四张图片重合了*/
     top: 0;
     left: 0;
     /*直接充满整个屏幕*/
@@ -32,5 +33,15 @@ body{
     /* 保留原始比例 */
     pointer-events: none;
     /* 是否对鼠标指针事件做出反应。none就是鼠标点上去也没用，auto就是有用 */
+    
+}
+.main:before{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to top,#0a2a43, transparent);
+    
 }
 
