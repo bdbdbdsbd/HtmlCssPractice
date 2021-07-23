@@ -25,6 +25,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    /*直接充满整个屏幕*/
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,3 +33,4 @@ body{
     pointer-events: none;
     /* 是否对鼠标指针事件做出反应。none就是鼠标点上去也没用，auto就是有用 */
 }
+
