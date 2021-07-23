@@ -42,6 +42,15 @@ body{
     width: 100px;
     height: 100px;
     background: linear-gradient(to top,#0a2a43, transparent);
-    
+    z-index: 10000;
+}
+.main:after{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to top,#0a2a43, transparent);
+    z-index: 10000;
 }
 
