@@ -56,5 +56,12 @@ body{
     z-index: 10000;
     mix-blend-mode: color;
     /*颜色混合*/
+    z-index: 10000;
+}
+#text{
+    position: relative;
+    color:#fff;
+    font-size: 10em;
+    z-index: 11;
 }
 
