@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background: #0a2a43;
+    min-height: 1500px;
+}
+.main{
+    position: relative;
+    width:100%;
+    /* 100vh和100%区别在于，如果里面没有元素，100vh还是会占据这个高度，而100%此时的高度就是0 */
+    height: 100vh;  
+    overflow: hidden;
+    /* 溢出隐藏 */
+    display: flex;
+    /* 弹性布局 在不同方向排列元素 重新排列元素的显示顺序 更改元素的对齐方式 动态地将元素装入容器*/
+    justify-content: center;
+    /* 水平居中，弹性项目居中紧挨着填充。（如果剩余的自由空间是负的，则弹性项目将在两个方向上同时溢出）。 */
+    align-items: center;
+    /* 垂直居中，弹性项目居中紧挨着填充。（如果剩余的自由空间是负的，则弹性项目将在两个方向上同时溢出）。 */
+}
+.main img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
