@@ -1,14 +1,15 @@
 
-function init(){
-    var Im=document.getElementById("imgg");
+function initi(){
+    var bgg=document.getElementsByClassName("imgg")[0];
 }
 function roll(){
+    
     window.addEventListener('scroll',function(){
         var value=window.scrollY;
-        Im.style.height=(1836-value)/1836*551+'px';
+        document.getElementsByClassName("imgg")[0].style.height=(700-value)/700*212+'px';
     });
 }
 window.onload=function(){
-    init();
+    initi();
     roll();
 }
