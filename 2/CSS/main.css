@@ -25,7 +25,7 @@ body{
     position: relative;
     z-index: 1;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center;
 }
 .content h1{
