@@ -1,7 +1,14 @@
 window.onload=function(){
-     let Img=document.getElementById("img");
+     
+    init();
+    roll();
+}
+function init(){
+    var Img=document.getElementById("img");
+}
+function roll(){
     window.addEventListener('scroll',function(){
-    var value=window.scrollY;
-    Img.style.height=(1000-value)/1000+'px';
-});
+        var value=window.scrollY;
+        Img.style.height=(1836-value)/1836*551+'px';
+    });
 }
