@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2196f3;
+}
+.loader{
+    position: relative;
+    display: flex;
+    
+}
+.loader span{
+    width: 50px;
+    height: 300px;
+    margin: auto 20px;
+    background: #2196f3;
+    /* background: skyblue; */
+    /* animate代表着动画的名字由@keyframes定义， 1.4s 代表动画的世界 linear待变线性 infinite是代表无限循环*/
+    animation: animate 1.4s linear infinite;
+}
+/* 这部分都是延时 */
+.loader span:nth-child(1){
+    animation-delay: 0s;
+}
+.loader span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(3){
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(4){
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(5){
+    animation-delay: 0.8s;
+}
+.loader span:nth-child(6){
+    animation-delay: 1s;
+}
+.loader span:nth-child(7){
+    animation-delay: 1.2s;
+}
+@keyframes animate{
+    0%{
+        /* 这个是阴影 前面的两个是偏移的位置，后面两个是扩散的宽度 最后是颜色*/
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        /* opacity是透明度，0是完全透明 */
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    50%{
+        box-shadow: 10px 20px 30px 0px rgba(0, 0, 0, .5);
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
