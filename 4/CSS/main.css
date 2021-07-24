@@ -24,10 +24,42 @@
     /* 自动处理溢出的内容 */
     /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow-y */
 }
-#menu-overlay li{
+#menu-overlay  ul li{
    list-style: none;
 }
-a{
+#menu-overlay ul{
+    position: relative;
+}
+#menu-overlay  ul li a{
     text-decoration: none;
-
+    position: relative;
+    font-size: 3.5em;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    /* 块级元素(block)：独占一行，
+    对宽高的属性值生效；如果不给宽度，块级元素就默认为浏览器的宽度，即就是100%宽。 
+    行内元素(inline)：可以多个标签存在一行，对宽高属性值不生效，完全靠内容撑开宽高。
+    行内块元素(inline-block)：结合的行内和块级的优点，既可以设置长宽，可以让padding和margin生效，又可以和其他行内元素并排。
+    */
+}
+#menu-overlay  ul li a:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #ff0;
+    /* transform属性允许你旋转，缩放，倾斜或平移给定元素。 */
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: right;
+    transition: 0.5s transform;
+}
+#menu-overlay  ul li a:hover:before{
+    transform: translateY(-50%) scaleX(1);
+    transform-origin: left;
+    transition: 0.5s transform;
 }
