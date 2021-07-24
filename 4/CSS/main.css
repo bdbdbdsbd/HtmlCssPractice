@@ -54,6 +54,8 @@
     height: 8px;
     background: #ff0;
     /* transform属性允许你旋转，缩放，倾斜或平移给定元素。 */
+    /* translateY在页面里面垂直移动元素 */
+    /* scaleX() CSS 函数将每个元素点的横坐标修改为一个常数因子，除了该比例因子为1，在这种情况下，函数是身份变换。 缩放不是各向同性的，并且元素的角度不保守。 */
     transform: translateY(-50%) scaleX(0);
     transform-origin: right;
     transition: 0.5s transform;
