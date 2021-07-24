@@ -16,6 +16,7 @@ body{
     position: absolute;
     bottom: 0px;
     background-color: #111;
+    height: 30%;
 } 
 h2{
     top:50%;
