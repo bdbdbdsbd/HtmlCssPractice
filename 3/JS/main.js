@@ -1,4 +1,4 @@
-
+var bgg=document.getElementsByClassName("imgg")[0];
 function rolli(){
     window.addEventListener('scroll',function(){
     var value=window.scrollY;
@@ -8,6 +8,5 @@ function rolli(){
     });
 }
 window.onload=function(){
-    var bgg=document.getElementsByClassName("imgg")[0];
     rolli();
 }
