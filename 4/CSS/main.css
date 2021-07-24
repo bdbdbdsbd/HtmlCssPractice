@@ -16,20 +16,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: red;
+    background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-y: auto;
     /* 自动处理溢出的内容 */
-    /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow-y */
-}
-/* 这部分就是整个缩放的过程 */
-#menu-overlay {
+    /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow-y */ 
     transform: scale(0);
     transition: 0.5s;
 }
-#menu-overlay .active{
+/* 这部分就是整个缩放的过程 */
+/* 注意中间不能有空格，不然会变成下一级的关系
+    也不能单纯的留下active
+    因为这样优先级不够
+*/
+#menu-overlay.active{
     transform: scale(1);
 }
 /* 缩放结束 */
@@ -64,7 +66,7 @@
     left: 0;
     width: 100%;
     height: 10px;
-    background: #ff0;
+    background: lightcyan;
     /* transform属性允许你旋转，缩放，倾斜或平移给定元素。 */
     /* translateY在页面里面垂直移动元素 */
     /* scaleX() CSS 函数将每个元素点的横坐标修改为一个常数因子，除了该比例因子为1，在这种情况下，函数是身份变换。 缩放不是各向同性的，并且元素的角度不保守。是一个缩放的效果 */
@@ -86,9 +88,11 @@
     right: 20px;
     width: 50px;
     height: 50px;
-    background: royalblue;
+    background: lightblue;
     z-index: 10000;
     /* 在鼠标指针悬停在元素上时显示相应样式 */
     cursor: pointer;
-
+}
+#toggleIcon.active{
+    background: white;
 }
