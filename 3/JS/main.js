@@ -1,15 +1,10 @@
-
-function initi(){
-    var bgg=document.getElementsByClassName("imgg")[0];
-}
-function roll(){
-    
+var bgg=document.getElementsByClassName("imgg")[0];
+function rolli(){
     window.addEventListener('scroll',function(){
-        var value=window.scrollY;
-        document.getElementsByClassName("imgg")[0].style.height=(700-value)/700*212+'px';
+    var value=window.scrollY;
+    bgg.style.height=(700-value)/700*212+'px';
     });
 }
 window.onload=function(){
-    initi();
-    roll();
+    rolli();
 }
