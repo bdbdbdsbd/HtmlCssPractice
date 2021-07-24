@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 'Poppins',sans-serif;
+}
+#menu-overlay{
+    position: fixed;
+    /* 设置这四个等于0，相当于铺开了整个空间 
+    不设置的话，menu-overlay就在左上角
+    设置的话，menu-overlay就在正中间
+    起到了一个块状的居中的效果
+    并且整个版面都是这个menu-overlay
+    宽高都起码是1005
+    */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    /* 自动处理溢出的内容 */
+    /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow-y */
+}
+#menu-overlay li{
+   list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
