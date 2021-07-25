@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: #262626;
 }
 ul{
     position: absolute;
@@ -10,4 +11,62 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
+}
+ul li{
+    list-style: none;
+    height: 80px;
+}
+ul li a{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 80px;
+    border: 1px solid #000;
+    border-right: none;
+    text-align: center;
+    text-decoration: none;
+    line-height: 80px;
+    color:white;
+    z-index: 20;
+}
+ul li:last-child a{
+    border-right: 1px solid #000;
+}
+ul li a:before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 80px;    
+    z-index: -1;
+    background-color: red;
+    transform: scaleX(0);
+    /* 更改一个元素变形的原点。 */
+    transform-origin: right;
+    /*  duration | timing function  */
+    transition: 0.5s transform;
+}
+ul li a:hover::before{
+    transform: scaleX(1);
+    /* 更改一个元素变形的原点。 */
+    transform-origin: left;
+    /*  duration | timing function  */
+    transition: 0.5s transform;
+    z-index: -1;
+}
+ul li:nth-child(1) a:before{
+    background-color: lightsalmon;
+}
+ul li:nth-child(2) a:before{
+    background-color: lightpink;
+}
+ul li:nth-child(3) a:before{
+    background-color: lightslategrey;
+}
+ul li:nth-child(4) a:before{
+    background-color: lightskyblue;
+}
+ul li:nth-child(5) a:before{
+    background-color: lightseagreen;
 }
