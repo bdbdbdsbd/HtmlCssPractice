@@ -7,5 +7,43 @@
      font-style: normal;
 }
 .icon{
+    position: relative;
     font-family: FontAwesome;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 1;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+body{
+    background-color: chocolate;
+}
+.icon:before{
+    content: ' ';
+    position: absolute;
+    background-color: chocolate;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.icon:hover:before{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.icon:hover{
+    color: white;
 }
