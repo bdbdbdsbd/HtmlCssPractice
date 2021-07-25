@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50% ;
+    /* border: black 8px solid; */
+    /* X轴位移，Y轴位移  虚化程度 宽度*/
+    box-shadow: 0px 0px 0px 15px #03a9f4;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+div:hover{
+    border-radius: 0% ;
+    transition: 0.5s;
+}
+div:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f4;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    font-size: 1em;
+    color: blanchedalmond;
+    margin: 0;
+}
