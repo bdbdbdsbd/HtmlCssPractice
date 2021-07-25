@@ -32,6 +32,7 @@ body{
 .icon:before{
     content: ' ';
     position: absolute;
+    left: 0px;
     background-color: chocolate;
     z-index: -1;
     width: 100px;
