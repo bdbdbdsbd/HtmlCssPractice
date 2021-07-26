@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../IMG/5.png);
+    /* 缩放背景图片以完全覆盖背景区 */
+    background-size: cover;    
+    background-repeat: no-repeat;
+    font-family: 'PT Sans', sans-serif;
+}
+.neon{
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0px;
+    padding:0 20px;
+    color: white;
+    text-shadow: 0 0 20px red;
+}
+/* 这个after 没效果啊 */
+.neon:after{
+    /* attribute-name是CSS所引用的HTML属性名称。 */
+    /* attr() 理论上能用于所有的CSS属性但目前支持的仅有伪元素的 content 属性，其他的属性和高级特性目前是实验性的 */
+    content: attr(date-text);
+    /* 理论上和上一句一样，但是实际效果不一样 */
+    /* content: '[STARRY SKY]'; */
+    /* 这句和第一句竟然一样 */
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: red;
+    filter: blur(15px);
+}
+.neon:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fe3a80;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    /*  opacity: 0.5;透明程度 */
+    opacity: .5;
+    /* blur() 函数将高斯模糊应用于输入图像 */
+    filter: blur(40px);
+}
