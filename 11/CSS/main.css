@@ -33,7 +33,7 @@ body{
 /* .box:hover .fi:before
 会比    .fi:hover:before好很多
 后者会有很多抖动
-fi的识别问题吗
+因为fi是在移动的，移动到一半鼠标不在上面就不是hover
 */
 .fi:before{
     content: " ";
@@ -49,6 +49,7 @@ fi的识别问题吗
 }
 .box:hover .fi:before{
     transform: rotateX(90deg) translateY(50%);
+    /* translateY(50%)乡下移动一半，这样转起来才带劲 */
 }
 .fi:after{
     content: " ";
