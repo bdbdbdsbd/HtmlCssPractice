@@ -1,0 +1,64 @@
+body{
+    background: url(../IMG/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 400px;
+    width:  300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left :50%;
+    transform:translate(-50%,-50%);
+    padding: 40px;
+}
+.main img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: -35px;
+    /* 注意 - 两边要有空白字符 */
+    left: calc(50% - 35px);
+}
+.main .title{
+    color: yellow;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+.main .stitle{
+    color: white;
+    font-weight: 500;
+}
+.main input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px white solid;
+    outline: none;
+    padding-bottom: 10px;
+    background: none;
+    height: 20px;
+    font-size: 18px;
+    color: white;
+}
+input[type='submit']{
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: violet;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+input[type='submit']:hover{
+    background-color: rgb(194, 84, 194);
+}
+.forget a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
