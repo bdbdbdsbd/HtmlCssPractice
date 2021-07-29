@@ -1,0 +1,26 @@
+body{
+    background-color: #1c363e;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.main img{
+    width: 400px;
+    height: 400px;
+    transform: scale(1) rotateX(0); 
+    transition: 0.5s all ease-in-out;
+}
+.main img:hover{
+    transform: scale(1.5) rotateZ(45deg); 
+
+}
