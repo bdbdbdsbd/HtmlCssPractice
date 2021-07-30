@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    list-style: none;
+    float: left;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    line-height: 30px;
+    text-align: center;
+}
+ul li .fa{
+    font-size: 60px;
+    transition: 0.5s;
+}
+ul li:hover .fa{
+    font-size: 40px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+ul li .text{
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+ul li:hover .text{
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
