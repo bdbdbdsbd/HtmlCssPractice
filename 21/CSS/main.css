@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: royalblue;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px solid rgba(255, 255, 255, 0.2);
+    border-top:15px solid rgba(255, 255, 255, 0.8);
+    animation: animate 1s infinite linear;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%) rotateZ(0)
+    }
+    50%{
+        transform: translate(-50%,-50%) rotateZ(180deg)
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateZ(360deg)
+    }
+}

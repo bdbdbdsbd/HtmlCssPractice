@@ -20,6 +20,7 @@ ul li .fa{
 ul li:hover .fa{
     font-size: 40px;
     transition: 0.5s;
+    transform: translateY(-10px);
     margin: 0;
     padding: 0;
 }
@@ -30,7 +31,7 @@ ul li .text{
     padding: 0;
 }
 ul li:hover .text{
-    transform: scale(1);
+    transform: scale(1)  translateY(-10px);;
     transition: 0.5s ease-in-out;
 }
 ul{
