@@ -20,3 +20,4 @@
 16. 图像缩放效果
 17. 灰度悬停效果 Because of you, my world have a touch of color
 18. 改变文本选择器颜色
+19. 菜单悬停效果
