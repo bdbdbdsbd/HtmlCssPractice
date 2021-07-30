@@ -1,5 +1,5 @@
 # BD的前端小仓库
-一些HTML和CSS加上轻量的JS小制作，来源是youtube的教程，B站上面也有UP主搬运
+一些HTML和CSS加上一点的JS小制作，来源是youtube的教程，B站上面也有UP主搬运
 有些是抄的，有些是自己写的
 本项目主要还是强调CSS的应用，JS部分很少
 1. 简单的视差滚动
@@ -21,3 +21,6 @@
 17. 灰度悬停效果 Because of you, my world have a touch of color
 18. 改变文本选择器颜色
 19. 菜单悬停效果
+20. 图标滑动悬停的效果
+21. 非常简单的CSS加载动画
+22. CSS滚动效果
