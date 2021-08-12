@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+  
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+}
+.main .up{
+    height: 50%;
+    width: 100%;
+    background-color: lightpink;
+}
+.main .gradient{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(45deg,transparent 0%,lightpink 0%,lightpink 50%,transparent 50%),linear-gradient(-45deg,transparent 0%,lightpink 0%,lightpink 50%,transparent 50%);
+     /* linear-gradient(-45deg,transparent 0%,lightpink 0%,lightpink 50%,transparent 50%); */
+    background-size: 20px 20px;
+    transform: rotate(180deg) ;
+}
