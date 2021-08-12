@@ -1,0 +1,53 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+}
+.main .tex{
+    padding: 10px;
+    border: 2px solid #262626;
+    transform: skew(15deg);
+    border-radius: 2px;
+    
+}
+.main .tex:hover{
+    background-color: royalblue; 
+    transition: 0.3s;
+}
+.main .tex:hover a{
+    color: white;
+    transition: 0.3s;
+}
+span:nth-child(1){
+    position: absolute;
+    top: 6px;
+    left: -19px;
+    height: 41px;
+    width: 14px;
+    border: 2px solid #262626;
+    transform: skewY(-45deg);
+    border-radius: 2px;
+}
+span:nth-child(2){
+    position: absolute;
+    right: 6px;
+    bottom: -19px;
+    height: 14px;
+    width: 111px;
+    border: 2px solid #262626;
+    transform: skewX(-45deg);
+    border-radius: 2px;
+    box-shadow: 0 80px 20px rgba(0, 0, 0, 0.6);
+    
+}
