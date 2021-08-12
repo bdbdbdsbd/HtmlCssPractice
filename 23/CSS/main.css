@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+
+    
+}
+.main{
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main .display{
+    display: flex;
+
+}
+.main .display .light{
+    height: 500px;
+    width: 6px;
+    background-color: gray;
+    margin: 100px;
+}
+.main .display #n1{
+    background-color: rgb(247, 149, 149);
+    box-shadow: 0 0 20px 6px rgb(247, 149, 149);
+}
+.main .display #n2{
+    background-color: rgb(238, 238, 135);
+    box-shadow: 0 0 20px 6px rgb(238, 238, 135);
+}
+.main .display #n3{
+    background-color: lightgreen;
+    box-shadow: 0 0 20px 6px lightgreen;
+}
+.main .display #n4{
+    background-color: rgb(125, 125, 243);
+    box-shadow: 0 0 20px 6px rgb(125, 125, 243);
+}
+.main .display #n5{
+    background-color: rgb(241, 171, 241);
+    box-shadow: 0 0 20px 6px rgb(241, 171, 241);
+}
+.main .display #n1:hover{
+    background-color: gray;
+    box-shadow:none;
+}
+.main .display #n2:hover{
+    background-color: gray;
+    box-shadow:none;
+}
+.main .display #n3:hover{
+    background-color: gray;
+    box-shadow:none;
+}
+.main .display #n4:hover{
+    background-color: gray;
+    box-shadow:none;
+}
+.main .display #n5:hover{
+    background-color: gray;
+    box-shadow:none;
+}
